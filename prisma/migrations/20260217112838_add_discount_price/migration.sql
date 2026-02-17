@@ -1,0 +1,10 @@
+-- AlterTable
+ALTER TABLE "Booking" ALTER COLUMN "customerName" DROP DEFAULT,
+ALTER COLUMN "phone" DROP DEFAULT,
+ALTER COLUMN "totalAmount" DROP DEFAULT;
+
+-- AlterTable
+ALTER TABLE "Lead" ALTER COLUMN "phone" DROP DEFAULT;
+
+-- AlterTable
+ALTER TABLE "Villa" ADD COLUMN     "discountPrice" DOUBLE PRECISION;
